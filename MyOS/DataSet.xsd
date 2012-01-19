@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet" targetNamespace="http://tempuri.org/DataSet.xsd" xmlns:mstns="http://tempuri.org/DataSet.xsd" xmlns="http://tempuri.org/DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet" msprop:Generator_DataSetName="DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Process" msprop:Generator_UserTableName="Process" msprop:Generator_RowDeletedName="ProcessRowDeleted" msprop:Generator_TableClassName="ProcessDataTable" msprop:Generator_RowChangedName="ProcessRowChanged" msprop:Generator_RowClassName="ProcessRow" msprop:Generator_RowChangingName="ProcessRowChanging" msprop:Generator_RowEvArgName="ProcessRowChangeEvent" msprop:Generator_RowEvHandlerName="ProcessRowChangeEventHandler" msprop:Generator_TablePropName="Process" msprop:Generator_TableVarName="tableProcess" msprop:Generator_RowDeletingName="ProcessRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" />
+              <xs:element name="State" msprop:Generator_UserColumnName="State" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInTable="StateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Memory_Size" msprop:Generator_UserColumnName="Memory_Size" msprop:Generator_ColumnPropNameInRow="Memory_Size" msprop:Generator_ColumnVarNameInTable="columnMemory_Size" msprop:Generator_ColumnPropNameInTable="Memory_SizeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Burst_Time" msprop:Generator_UserColumnName="Burst_Time" msprop:Generator_ColumnPropNameInRow="Burst_Time" msprop:Generator_ColumnVarNameInTable="columnBurst_Time" msprop:Generator_ColumnPropNameInTable="Burst_TimeColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Process" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
